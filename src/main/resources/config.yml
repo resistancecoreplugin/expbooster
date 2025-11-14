@@ -1,0 +1,55 @@
+# ExpBooster Configuration
+
+# Default multiplier for all worlds (if not specified in world-settings)
+default-multiplier: 1.0
+
+# World-specific settings
+world-settings:
+  world:
+    enabled: true
+    multiplier: 1.5
+  world_nether:
+    enabled: true
+    multiplier: 2.0
+  world_the_end:
+    enabled: true
+    multiplier: 2.5
+
+# Booster settings
+boosters:
+  # Time in seconds
+  duration-options:
+    - 300  # 5 minutes
+    - 600  # 10 minutes
+    - 1800 # 30 minutes
+    - 3600 # 1 hour
+  
+  # Multiplier options
+  multiplier-options:
+    - 1.5
+    - 2.0
+    - 3.0
+    - 5.0
+  
+  # Pricing (cost = base-price * duration-in-minutes * multiplier-value)
+  pricing:
+    base-price: 100.0
+    duration-factor: 1.0
+    multiplier-factor: 1.5
+
+# GUI settings
+gui:
+  title-main: "&6&lExp Booster"
+  title-world-settings: "&6&lWorld Settings"
+  title-shop: "&6&lBooster Shop"
+
+# Messages
+messages:
+  prefix: "&8[&6ExpBooster&8] "
+  no-permission: "&cYou don't have permission to use this command."
+  booster-activated: "&aYou have activated a x%multiplier% booster for %duration% minutes!"
+  booster-expired: "&cYour x%multiplier% exp booster has expired."
+  global-booster-activated: "&aA global x%multiplier% exp booster has been activated for %duration% minutes!"
+  global-booster-expired: "&cThe global x%multiplier% exp booster has expired."
+  insufficient-funds: "&cYou don't have enough money to purchase this booster."
+  world-setting-updated: "&aExp multiplier for world &e%world% &ahas been updated to &e%multiplier%&a."

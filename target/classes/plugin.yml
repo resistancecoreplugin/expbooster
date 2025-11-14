@@ -1,0 +1,20 @@
+name: ExpBooster
+version: '1.0-SNAPSHOT'
+main: com.resistancecore.expbooster.ExpBooster
+api-version: '1.21'
+depend: [Vault]
+authors: [YourName]
+description: A plugin to boost mob XP drops with GUI configuration
+commands:
+  expbooster:
+    description: Main command for the ExpBooster plugin
+    usage: /expbooster
+    aliases: [xpboost, expboost, xpbooster]
+    permission: expbooster.use
+permissions:
+  expbooster.use:
+    description: Allows using the basic ExpBooster commands
+    default: true
+  expbooster.admin:
+    description: Allows access to admin features
+    default: op
